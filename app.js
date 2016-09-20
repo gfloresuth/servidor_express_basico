@@ -8,6 +8,8 @@ var app = express();
 const PORT = 8090;
 
 // Se da acceso a los archivos que esten en la carpeta public.
+// y los archivos se pueden ver en la siguiente dirección: http://localhost:8090/
+// para ver el archivo index.html que esta en public es necesario poner http://localhost:8090/index.html 
 app.use('/',express.static(__dirname + '/public'));
 
 // Se maneja la primer ruta que es /, la cual equivale a http://localhost:8090/hola/
